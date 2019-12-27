@@ -1,4 +1,4 @@
-# ImageHelperPro
+# ImageHelperPro 
 Tool to facilate modify images to be fitted with google play listing requirements and other operation with images
 
 
@@ -16,3 +16,7 @@ I have used my phone to take screenshoot for **store listing** to be used as **g
 - [x] rename images with specified name.
 - [x] resize with specfic size.
 - [ ] make feature graphic.
+
+
+
+# working on make jar file, add docunetation, how to use.
