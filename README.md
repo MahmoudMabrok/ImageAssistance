@@ -19,4 +19,4 @@ I have used my phone to take screenshoot for **store listing** to be used as **g
 
 
 
-# working on make jar file, add docunetation, how to use.
+# working on make jar file, add documentation, how to use.
