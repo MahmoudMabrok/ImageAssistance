@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tools.mahmoudmabrok.imagehelper.logic;
+package sample;
 
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
@@ -12,13 +12,12 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 
 /**
- *
  * @author mo3tamed
  */
 public class ImageResiszer {
 
     public static void resize(String inputImagePath,
-            String outputImagePath, int scaledWidth, int scaledHeight)
+                              String outputImagePath, int scaledWidth, int scaledHeight)
             throws IOException {
         // reads input image
         File inputFile = new File(inputImagePath);
@@ -45,15 +44,14 @@ public class ImageResiszer {
     /**
      * Resizes an image by a percentage of original size (proportional).
      *
-     * @param inputImagePath Path of the original image
+     * @param inputImagePath  Path of the original image
      * @param outputImagePath Path to save the resized image
-     * @param percent a double number specifies percentage of the output image
-     * over the input image.
      * @throws IOException
      */
-    public static void resize(String inputImagePath,
-            String outputImagePath) throws IOException {
+    public static void resizeAsGoogle(String inputImagePath,
+                                      String outputImagePath) throws IOException {
 
+        System.out.println("inputImagePath = " + inputImagePath);
         File inputFile = new File(inputImagePath);
         BufferedImage inputImage = ImageIO.read(inputFile);
         int currentWidth = (int) (inputImage.getWidth());
@@ -73,4 +71,11 @@ public class ImageResiszer {
         resize(inputImagePath, outputImagePath, scale, scale * 2);
     }
 
+    // // TODO: 12/28/2019 to use same file name (by copy a new one with replace)
+    public static void resizeAsGraphicFeature(String path) throws IOException {
+        int index = path.lastIndexOf(File.separatorChar) + 1;
+        String base = path.substring(0, index);
+        String name = path.substring(index);
+        resize(path, base + name, 1024, 500);
+    }
 }
