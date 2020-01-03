@@ -1,4 +1,5 @@
-# ImageAssistance 
+# ImageAssistance  [![HitCount](http://hits.dwyl.io/mahmoudmabrok/ImageAssistance.svg)](http://hits.dwyl.io/mahmoudmabrok/ImageAssistance)
+
 Tool to **automate** modifing images to be fitted with google play listing requirements and other operation with images
 
 
