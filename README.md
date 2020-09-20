@@ -4,7 +4,6 @@
 Tool to **automate** modifing images to be fitted with **google play listing** requirements and other operation with images.
 
 # Screenshoots 
-
 ![img](pro.JPG)
 
 # Motiviation
@@ -22,5 +21,5 @@ Tool to **automate** modifing images to be fitted with **google play listing** r
 - [ ] provide detailed message with each operation. 
 
 # How to use 
-- I test it under windows 
-  - open **.jar** file.
+## for windows 
+- open **.jar** file.
